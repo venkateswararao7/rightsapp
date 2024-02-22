@@ -3,6 +3,7 @@ import React from 'react';
 import { View, TouchableOpacity, StyleSheet, Linking, Alert } from 'react-native';
 import { FontAwesome, EvilIcons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import LottieView from "lottie-react-native";
 
 const NavBar = () => {
     const navigation = useNavigation();
@@ -29,6 +30,7 @@ const NavBar = () => {
         <View style={styles.container}>
             <TouchableOpacity onPress={() => navigation.navigate('Home')}>
                 <FontAwesome name="home" size={40} color="white" />
+
             </TouchableOpacity>
             <TouchableOpacity onPress={() => navigation.navigate('Game')}>
                 <FontAwesome name="gamepad" size={40} color="white" />

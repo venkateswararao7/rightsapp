@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View, Text, SafeAreaView, StatusBar, Image } from "react-native";
 import NavBar from "../../NavBar/NavBar";
-
+import LottieView from "lottie-react-native";
 const HomeScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={{ flex: 1 }}>
@@ -12,8 +12,19 @@ const HomeScreen = ({ navigation }) => {
                     <View style={styles.collegeImageContainer}>
                         <Image source={require("../../images/college.png")} />
                     </View>
+                    <View style={styles.welcome}>
+                        <LottieView
+                            style={{ flex: 1 }}
+                            source={require("../../Animations/Hello.json")}
+                            autoPlay
+                            loop
+
+                        />
+                    </View>
                     <View style={styles.textContainer}>
-                        <Text style={styles.heading}>Welcome To The ChildRights Application</Text>
+                        {/* <Text style={styles.heading}>Welcome To The ChildRights Application</Text> */}
+
+
                     </View>
                     <View style={styles.childContainer}>
                         <Image source={require("../../images/childRights.jpg")} />
@@ -45,19 +56,23 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     textContainer: {
-        marginTop: 40,
+
         alignItems: "center", // Align text horizontally
     },
-    heading: {
-        fontSize: 23,
-        marginBottom: 50,
-        textAlign: 'center',
-    },
+    // heading: {
+    //     fontSize: 23,
+    //     marginBottom: 1,
+    //     textAlign: 'center',
+    // },
     rights: {
-        marginTop: 20,
+        marginTop: 5,
         fontSize: 16,
         textAlign: 'center', // Align text horizontally
         paddingHorizontal: 20, // Add padding
+    },
+    welcome: {
+        height: 200,
+        aspectRatio: 1
     }
 });
 

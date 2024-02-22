@@ -7,6 +7,8 @@ import CertificateGenerator from '../Profile/CertificateGenerator';
 import NavBar from "../../NavBar/NavBar";
 import url from "../backendurl";
 import axios from 'axios';
+import LottieView from "lottie-react-native";
+
 
 const ProfileScreen = () => {
     const [userData, setUserData] = useState(null);
@@ -67,6 +69,10 @@ const ProfileScreen = () => {
     return (
         <View style={styles.container}>
             {/* Certificate components */}
+
+            <View style={styles.rankingAnimation}>
+                <LottieView style={{ flex: 1 }} source={require("../../Animations/ranking.json")} autoPlay loop />
+            </View>
             <View style={styles.certificateContainer}>
                 <Certificate recipientName={name} />
             </View>
@@ -97,6 +103,11 @@ const styles = StyleSheet.create({
     },
     buttonContainer: {
         marginBottom: 10 // Add marginBottom for spacing
+    },
+    rankingAnimation: {
+        marginTop: 0,
+        height: 200,
+        aspectRatio: 1
     }
 });
 
