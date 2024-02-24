@@ -13,7 +13,7 @@ import LoginScreen from './assets/components/componentsViews/screens/LoginScreen
 import ProfileScreen from './assets/components/componentsViews/screens/ProfileScreen';
 import AdventureScreen from './assets/components/Games/GameFolder/AdventureGame/AdvantureScreen';
 import RandomPuzzleScreen from './assets/components/componentsViews/screens/RandomPuzzleScreen';
-
+import AnimationVideo from './assets/components/componentsViews/screens/AnimationVideo';
 const Stack = createStackNavigator();
 
 function App() {
@@ -191,6 +191,21 @@ function App() {
           component={RandomPuzzleScreen}
           options={{
             title: 'Question',
+            headerStyle: {
+              backgroundColor: '#000000',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+              fontSize: 30,
+            }
+          }}
+        />
+        <Stack.Screen
+          name="video"
+          component={AnimationVideo}
+          options={{
+            title: 'Animation Video',
             headerStyle: {
               backgroundColor: '#000000',
             },

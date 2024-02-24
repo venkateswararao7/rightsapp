@@ -5,8 +5,8 @@ import { useNavigation } from '@react-navigation/native';
 const RightComponent = (props) => {
     const navigation = useNavigation();
 
-    const openYouTubeVideo = () => {
-        Linking.openURL(props.youTubeLink)
+    const openVideo = () => {
+        navigation.navigate("video", { "animationVideo": props.video })
     }
     const openWebSite = () => {
         Linking.openURL(props.webSiteLink);
@@ -23,8 +23,8 @@ const RightComponent = (props) => {
                 <Text>{props.discription}</Text>
             </View>
             <View style={styles.buttonContainer}>
-                <TouchableOpacity style={styles.button} onPress={openYouTubeVideo}>
-                    <Text>YouTube</Text>
+                <TouchableOpacity style={styles.button} onPress={openVideo}>
+                    <Text>Video</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.button} onPress={openWebSite}>
                     <Text>Website or pdf</Text>
