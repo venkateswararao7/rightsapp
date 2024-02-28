@@ -43,7 +43,7 @@ const GameScreen = ({ navigation }) => {
                         </View>
                         <View style={styles.Carddisplayer}>
                             <GameCard
-                                imageSource={require('../../images/snakeGame.png')}
+                                imageSource={require('../../images/courtroom.jpg')}
                                 gameName={"Adventure Game"}
                                 gamePage={"AdventureGame"}
                                 level={"level4"}

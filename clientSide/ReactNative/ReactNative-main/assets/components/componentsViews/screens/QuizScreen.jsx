@@ -32,14 +32,14 @@ const QuizScreen = ({ navigation }) => {
                         <RightComponent
                             article="Right To Freedom Of Speech And Expresstion"
                             discription="Constitution grants citizens freedom to express opinions, ensuring democratic participation."
-                            video="RightToEquality"
+                            video="video3"
                             webSiteLink="https://static.mygov.in/indiancc/2021/07/mygov-99999999916219128.pdf"
                             level="level2"
                         />
                         <RightComponent
                             article="Right To Education"
                             discription="Constitution assures free, compulsory education, fostering inclusive learning opportunities for all."
-                            video="RightToEquality"
+                            video="video4"
                             webSiteLink="https://www.education.gov.in/rte#:~:text=The%20Constitution%20(Eighty%2Dsixth%20Amendment,may%2C%20by%20law%2C%20determine."
                             level="level2"
                         />
@@ -49,14 +49,14 @@ const QuizScreen = ({ navigation }) => {
                         <RightComponent
                             article="Right Against Child Labor"
                             discription="Constitution protects children, bans labor, ensuring their right to education, safety, and a dignified childhood"
-                            video="RightToEquality"
+                            video="video5"
                             webSiteLink="https://labour.gov.in/sites/default/files/FAQ_child_labour.pdf"
                             level="level3"
                         />
                         <RightComponent
                             article="Right To Be Protected From Trafficking"
                             discription="Constitution safeguards against human trafficking, ensuring protection and security for all individuals"
-                            video="RightToEquality"
+                            video="video6"
                             webSiteLink="https://www.mea.gov.in/human-trafficking.htm"
                             level="level3"
                         />
@@ -65,16 +65,16 @@ const QuizScreen = ({ navigation }) => {
                         </View>
                         <RightComponent
                             article="Right To Identity"
-                            discription=""
-                            video="RightToEquality"
+                            discription="The right to identity ensures individuals' recognition and affirmation within social and legal frameworks."
+                            video="video7"
                             webSiteLink="https://ijlljs.in/wp-content/uploads/2015/04/Personal-Identity-and-Law.pdf"
                             level="level4"
                         />
 
                         <RightComponent
                             article="Right To Be Protected Against Abuse"
-                            discription=""
-                            youTubeLink=""
+                            discription="The right to be protected against abuse safeguards individuals from all forms of mistreatment and harm."
+                            video="video8"
                             webSiteLink="https://www.sos-childrensvillages.org/news/the-right-to-protection"
                             level="level4"
                         />
@@ -84,28 +84,27 @@ const QuizScreen = ({ navigation }) => {
                         <RightComponent
                             article="Right To Life And Personal Liberty"
                             discription="Constitution guarantees right to life, liberty, ensuring personal freedom and security for all citizens"
-                            youTubeLink=""
-                            webSiteLink=""
+                            video="video9"
+                            webSiteLink="https://byjus.com/free-ias-prep/right-to-life-article-21/#:~:text=%E2%80%9CProtection%20of%20Life%20and%20Personal,Right%20to%20life"
                             level="level5"
                         />
                         <RightComponent
                             article="Prohibition Of Child Marriages"
-                            discription=""
-                            youTubeLink=""
-                            webSiteLink=""
+                            discription="Prohibition of child marriages ensures the prevention of underage individuals from being married."
+                            video="video10"
+                            webSiteLink="https://www.indiacode.nic.in/bitstream/123456789/15943/1/the_prohibition_of_child_marriage_act%2C_2006.pdf"
                             level="level5"
                         />
                         <RightComponent
                             article="Protection From Sexual Offences"
-                            discription=""
-                            youTubeLink=""
-                            webSiteLink=""
+                            discription="Protection from sexual offences safeguards individuals from all forms of sexual abuse and harassment."
+                            video="video11"
+                            webSiteLink="https://www.indiacode.nic.in/bitstream/123456789/2079/1/AA2012-32.pdf"
                             level="level5"
                         />
 
                     </View>
                 </ScrollView>
-                {/* NavBar is placed outside the content */}
                 <NavBar />
             </View>
         </SafeAreaView>

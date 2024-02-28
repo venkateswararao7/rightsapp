@@ -9,12 +9,38 @@ const AnimationVideo = (props) => {
 
     switch (videoName) {
         case 'video1':
-            videoSource = require("../../AnimationVideos/right.mp4");
-            break;
-        case 'video2':
             videoSource = require("../../AnimationVideos/RightToEquality.mp4");
             break;
-        // Add more cases for other videos as needed
+        case 'video2':
+            videoSource = require("../../AnimationVideos/discrimination.mp4");
+            break;
+        case 'video3':
+            videoSource = require("../../AnimationVideos/freedom.mp4");
+            break;
+        case 'video4':
+            videoSource = require("../../AnimationVideos/education.mp4");
+            break;
+        case 'video5':
+            videoSource = require("../../AnimationVideos/childlabour.mp4");
+            break;
+        case 'video6':
+            videoSource = require("../../AnimationVideos/trafficking.mp4");
+            break;
+        case 'video7':
+            videoSource = require("../../AnimationVideos/identity.mp4");
+            break;
+        case 'video8':
+            videoSource = require("../../AnimationVideos/abuse.mp4");
+            break;
+        case 'video9':
+            videoSource = require("../../AnimationVideos/liberty.mp4");
+            break;
+        case 'video10':
+            videoSource = require("../../AnimationVideos/childmarriages.mp4");
+            break;
+        case 'video11':
+            videoSource = require("../../AnimationVideos/sexualoffences.mp4");
+            break;
         default:
             videoSource = require("../../AnimationVideos/right.mp4"); // Default video
             break;
